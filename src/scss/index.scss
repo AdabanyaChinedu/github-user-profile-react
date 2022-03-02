@@ -1,0 +1,83 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./reset";
+@import "./components/card.scss";
+@import "./components/search.scss";
+
+:root{ 
+  --blue: #2c7be5;
+  --light-blue: #edf2f9; 
+  --falcon-400: #b6c1d2;
+
+}
+
+
+html, body{
+  background-color: var(--light-blue);
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.text-blue{
+  color: var(--blue);
+}
+
+.fs--2{
+  font-size: 0.8rem;
+}
+
+
+.pagination {
+  
+  border-radius: .25rem
+}
+
+.page-item {
+  display: inline
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-bottom-left-radius: .25rem;
+  border-top-left-radius: .25rem
+}
+
+.page-item:last-child .page-link {
+  border-bottom-right-radius: .25rem;
+  border-top-right-radius: .25rem
+}
+
+.page-item.active .page-link,.page-item.active .page-link:focus,.page-item.active .page-link:hover {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: var(--blue);
+  border-color: var(--light-blue)
+}
+
+.page-item.disabled .page-link,.page-item.disabled .page-link:focus,.page-item.disabled .page-link:hover {
+  color: #818a91;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd
+}
+
+.page-link {
+  position: relative;
+  float: left;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  color: var(--blue);
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd
+}
+
+.page-link:focus,.page-link:hover {
+
+  background-color: #eceeef;
+  border-color: #ddd
+}
+
+
+
